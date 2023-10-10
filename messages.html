@@ -1,0 +1,1418 @@
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from preview.cruip.com/mosaic/messages.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Oct 2023 23:26:29 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Mosaic HTML Demo - Messages</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/vendors/flatpickr.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script>
+        if (localStorage.getItem('dark-mode') === 'false' || !('dark-mode' in localStorage)) {
+            document.querySelector('html').classList.remove('dark');
+            document.querySelector('html').style.colorScheme = 'light';
+        } else {
+            document.querySelector('html').classList.add('dark');
+            document.querySelector('html').style.colorScheme = 'dark';
+        }
+    </script>    
+<script defer data-domain='preview.cruip.com,rollup.cruip.com' src='../../plausible.cruip.com/js/script.js'></script></head>
+
+<body class="dark:text-slate-400 c0mt6 c5mp3 cjgp0 ch0j7 crl1g" :class="{ 'sidebar-expanded': sidebarExpanded }" x-data="{ sidebarOpen: false, sidebarExpanded: localStorage.getItem('sidebar-expanded') == 'true', msgSidebarOpen: true }" x-init="() => { $refs.contentarea.scrollTop = 99999999 }; $watch('sidebarExpanded', value => localStorage.setItem('sidebar-expanded', value))">
+
+    <script>
+        if (localStorage.getItem('sidebar-expanded') == 'true') {
+            document.querySelector('body').classList.add('sidebar-expanded');
+        } else {
+            document.querySelector('body').classList.remove('sidebar-expanded');
+        }
+    </script>
+
+    <!-- Page wrapper -->
+    <div class="flex cjdk2 ce8da">
+
+        <!-- Sidebar -->
+        <div class="cueqe">
+            <!-- Sidebar backdrop (mobile only) -->
+            <div class="bg-slate-900 ck08a cfnbh cw0de cko73 c90g0 ci6z5 cdqxl cbj8k" :class="sidebarOpen ? 'c9l2a' : 'opacity-0 pointer-events-none'" aria-hidden="true" x-cloak=""></div>
+        
+            <!-- Sidebar -->
+            <div id="sidebar" class="flex 2xl:!w-64 ca8si cpq53 cct55 cmlpt c6wiw c60px cj9p6 c2zpm ce8da ct135 cw0de cdml6 cus0z cu4g0 cj12w c2sgv c8tor cpeme cay19 cve75 cbj8k cnn0w curnp" :class="sidebarOpen ? 'translate-x-0' : '-translate-x-64'" @click.outside="sidebarOpen = false" @keydown.escape.window="sidebarOpen = false" x-cloak="lg">
+        
+                <!-- Sidebar header -->
+                <div class="flex czixg c8o7k ce5eu cseqx">
+                    <!-- Close button -->
+                    <button class="text-slate-500 cgfxz c90g0" @click.stop="sidebarOpen = !sidebarOpen" aria-controls="sidebar" :aria-expanded="sidebarOpen">
+                        <span class="cscai">Close sidebar</span>
+                        <svg class="c1gz1 c0wg1 crygk" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z"></path>
+                        </svg>
+                    </button>
+                    <!-- Logo -->
+                    <a class="block" href="index-2.html">
+                        <svg width="32" height="32" viewBox="0 0 32 32">
+                            <defs>
+                                <linearGradient x1="28.538%" y1="20.229%" x2="100%" y2="108.156%" id="logo-a">
+                                    <stop stop-color="#A5B4FC" stop-opacity="0" offset="0%"></stop>
+                                    <stop stop-color="#A5B4FC" offset="100%"></stop>
+                                </linearGradient>
+                                <linearGradient x1="88.638%" y1="29.267%" x2="22.42%" y2="100%" id="logo-b">
+                                    <stop stop-color="#38BDF8" stop-opacity="0" offset="0%"></stop>
+                                    <stop stop-color="#38BDF8" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <rect fill="#6366F1" width="32" height="32" rx="16"></rect>
+                            <path d="M18.277.16C26.035 1.267 32 7.938 32 16c0 8.837-7.163 16-16 16a15.937 15.937 0 01-10.426-3.863L18.277.161z" fill="#4F46E5"></path>
+                            <path d="M7.404 2.503l18.339 26.19A15.93 15.93 0 0116 32C7.163 32 0 24.837 0 16 0 10.327 2.952 5.344 7.404 2.503z" fill="url(#logo-a)"></path>
+                            <path d="M2.223 24.14L29.777 7.86A15.926 15.926 0 0132 16c0 8.837-7.163 16-16 16-5.864 0-10.991-3.154-13.777-7.86z" fill="url(#logo-b)"></path>
+                        </svg>
+                    </a>
+                </div>
+        
+                <!-- Links -->
+                <div class="cyy1x">
+                    <!-- Pages group -->
+                    <div>
+                        <h3 class="text-slate-500 c6cuc cwva3 clava c47ou">
+                            <span class="hidden 2xl:hidden c2z83 cqqye cuqjw cjqdj crygk" aria-hidden="true">•••</span>
+                            <span class="2xl:block cncme ckixu c90g0">Pages</span>
+                        </h3>
+                        <ul class="c1tl2">
+                            <!-- Dashboard -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block c175c c9gm5 cxtm7 cmta4 cgahp" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <path class="co9pf c1gz1" d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0z"></path>
+                                                <path class="c5mp3 c1gz1" d="M12 3c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9z"></path>
+                                                <path class="co9pf c1gz1" d="M12 15c-1.654 0-3-1.346-3-3 0-.462.113-.894.3-1.285L6 6l4.714 3.301A2.973 2.973 0 0112 9c1.654 0 3 1.346 3 3s-1.346 3-3 3z"></path>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Dashboard</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="index-2.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Main</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="analytics.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Analytics</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="fintech.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Fintech</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- E-Commerce -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <path class="co9pf c1gz1" d="M13 15l11-7L11.504.136a1 1 0 00-1.019.007L0 7l13 8z"></path>
+                                                <path class="cs4w5 c1gz1" d="M13 15L0 7v9c0 .355.189.685.496.864L13 24v-9z"></path>
+                                                <path class="c5mp3 c1gz1" d="M13 15.047V24l10.573-7.181A.999.999 0 0024 16V8l-11 7.047z"></path>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">E-Commerce</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="hidden cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="customers.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Customers</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="orders.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Orders</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="invoices.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Invoices</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="shop.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Shop</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="shop-2.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Shop 2</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="product.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Single Product</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="cart.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Cart</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="cart-2.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Cart 2</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="cart-3.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Cart 3</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="pay.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Pay</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Community -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <path class="c5mp3 c1gz1" d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z"></path>
+                                                <path class="co9pf c1gz1" d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z"></path>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Community</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="hidden cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="users-tabs.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Users - Tabs</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="users-tiles.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Users - Tiles</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="profile.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="feed.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Feed</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="forum.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Forum</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="forum-post.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Forum - Post</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="meetups.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Meetups</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="meetups-post.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Meetups - Post</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Finance -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <path class="co9pf c1gz1" d="M13 6.068a6.035 6.035 0 0 1 4.932 4.933H24c-.486-5.846-5.154-10.515-11-11v6.067Z"></path>
+                                                <path class="cs4w5 c1gz1" d="M18.007 13c-.474 2.833-2.919 5-5.864 5a5.888 5.888 0 0 1-3.694-1.304L4 20.731C6.131 22.752 8.992 24 12.143 24c6.232 0 11.35-4.851 11.857-11h-5.993Z"></path>
+                                                <path class="c5mp3 c1gz1" d="M6.939 15.007A5.861 5.861 0 0 1 6 11.829c0-2.937 2.167-5.376 5-5.85V0C4.85.507 0 5.614 0 11.83c0 2.695.922 5.174 2.456 7.17l4.483-3.993Z"></path>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Finance</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="hidden cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="credit-cards.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Cards</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="transactions.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Transactions</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="transaction-details.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Transaction Details</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Job Board -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <path class="cs4w5 c1gz1" d="M4.418 19.612A9.092 9.092 0 0 1 2.59 17.03L.475 19.14c-.848.85-.536 2.395.743 3.673a4.413 4.413 0 0 0 1.677 1.082c.253.086.519.131.787.135.45.011.886-.16 1.208-.474L7 21.44a8.962 8.962 0 0 1-2.582-1.828Z"></path>
+                                                <path class="c5mp3 c1gz1" d="M10.034 13.997a11.011 11.011 0 0 1-2.551-3.862L4.595 13.02a2.513 2.513 0 0 0-.4 2.645 6.668 6.668 0 0 0 1.64 2.532 5.525 5.525 0 0 0 3.643 1.824 2.1 2.1 0 0 0 1.534-.587l2.883-2.882a11.156 11.156 0 0 1-3.861-2.556Z"></path>
+                                                <path class="co9pf c1gz1" d="M21.554 2.471A8.958 8.958 0 0 0 18.167.276a3.105 3.105 0 0 0-3.295.467L9.715 5.888c-1.41 1.408-.665 4.275 1.733 6.668a8.958 8.958 0 0 0 3.387 2.196c.459.157.94.24 1.425.246a2.559 2.559 0 0 0 1.87-.715l5.156-5.146c1.415-1.406.666-4.273-1.732-6.666Zm.318 5.257c-.148.147-.594.2-1.256-.018A7.037 7.037 0 0 1 18.016 6c-1.73-1.728-2.104-3.475-1.73-3.845a.671.671 0 0 1 .465-.129c.27.008.536.057.79.146a7.07 7.07 0 0 1 2.6 1.711c1.73 1.73 2.105 3.472 1.73 3.846Z"></path>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Job Board</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="hidden cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="job-listing.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Listing</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="job-post.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Job Post</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="company-profile.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Company Profile</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Tasks -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <path class="c5mp3 c1gz1" d="M8 1v2H3v19h18V3h-5V1h7v23H1V1z"></path>
+                                                <path class="c5mp3 c1gz1" d="M1 1h22v23H1z"></path>
+                                                <path class="co9pf c1gz1" d="M15 10.586L16.414 12 11 17.414 7.586 14 9 12.586l2 2zM5 0h14v4H5z"></path>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Tasks</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="hidden cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="tasks-kanban.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Kanban</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="tasks-list.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">List</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Messages -->
+                            <li class="rounded-sm bg-slate-900 cmegh c3bz2 c1mpb chwtm">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="messages.html">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center cvxud">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <path class="text-indigo-500 c1gz1" d="M14.5 7c4.695 0 8.5 3.184 8.5 7.111 0 1.597-.638 3.067-1.7 4.253V23l-4.108-2.148a10 10 0 01-2.692.37c-4.695 0-8.5-3.184-8.5-7.11C6 10.183 9.805 7 14.5 7z"></path>
+                                                <path class="text-indigo-300 c1gz1" d="M11 1C5.477 1 1 4.582 1 9c0 1.797.75 3.45 2 4.785V19l4.833-2.416C8.829 16.85 9.892 17 11 17c5.523 0 10-3.582 10-8s-4.477-8-10-8z"></path>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Messages</span>
+                                        </div>
+                                        <!-- Badge -->
+                                        <div class="flex cqw6t cozeo">
+                                            <span class="inline-flex items-center justify-center rounded cp72d cqxsl cutn8 clava c99w7 c2ldl">4</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- Inbox -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="inbox.html">
+                                    <div class="flex items-center">
+                                        <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                            <path class="c5mp3 c1gz1" d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"></path>
+                                            <path class="co9pf c1gz1" d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"></path>
+                                        </svg>
+                                        <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Inbox</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- Calendar -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="calendar.html">
+                                    <div class="flex items-center">
+                                        <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                            <path class="c5mp3 c1gz1" d="M1 3h22v20H1z"></path>
+                                            <path class="co9pf c1gz1" d="M21 3h2v4H1V3h2V1h4v2h10V1h4v2Z"></path>
+                                        </svg>
+                                        <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Calendar</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- Campaigns -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="campaigns.html">
+                                    <div class="flex items-center">
+                                        <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                            <path class="c5mp3 c1gz1" d="M20 7a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 0120 7zM4 23a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 014 23z"></path>
+                                            <path class="co9pf c1gz1" d="M17 23a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 010-2 4 4 0 004-4 1 1 0 012 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1zM7 13a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 110-2 4 4 0 004-4 1 1 0 112 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1z"></path>
+                                        </svg>
+                                        <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Campaigns</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- Settings -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <path class="c5mp3 c1gz1" d="M19.714 14.7l-7.007 7.007-1.414-1.414 7.007-7.007c-.195-.4-.298-.84-.3-1.286a3 3 0 113 3 2.969 2.969 0 01-1.286-.3z"></path>
+                                                <path class="co9pf c1gz1" d="M10.714 18.3c.4-.195.84-.298 1.286-.3a3 3 0 11-3 3c.002-.446.105-.885.3-1.286l-6.007-6.007 1.414-1.414 6.007 6.007z"></path>
+                                                <path class="c5mp3 c1gz1" d="M5.7 10.714c.195.4.298.84.3 1.286a3 3 0 11-3-3c.446.002.885.105 1.286.3l7.007-7.007 1.414 1.414L5.7 10.714z"></path>
+                                                <path class="co9pf c1gz1" d="M19.707 9.292a3.012 3.012 0 00-1.415 1.415L13.286 5.7c-.4.195-.84.298-1.286.3a3 3 0 113-3 2.969 2.969 0 01-.3 1.286l5.007 5.006z"></path>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Settings</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="hidden cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="settings.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">My Account</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="notifications.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">My Notifications</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="connected-apps.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Connected Apps</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="plans.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Plans</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="billing.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Billing &amp; Invoices</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="feedback.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Give Feedback</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Utility -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4 cgahp" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <circle class="co9pf c1gz1" cx="18.5" cy="5.5" r="4.5"></circle>
+                                                <circle class="c5mp3 c1gz1" cx="5.5" cy="5.5" r="4.5"></circle>
+                                                <circle class="c5mp3 c1gz1" cx="18.5" cy="18.5" r="4.5"></circle>
+                                                <circle class="co9pf c1gz1" cx="5.5" cy="18.5" r="4.5"></circle>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Utility</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="hidden cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="changelog.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Changelog</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="roadmap.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Roadmap</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="faqs.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">FAQs</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="empty-state.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Empty State</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="404.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">404</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="knowledge-base.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Knowledge Base</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- More group -->
+                    <div>
+                        <h3 class="text-slate-500 c6cuc cwva3 clava c47ou">
+                            <span class="hidden 2xl:hidden c2z83 cqqye cuqjw cjqdj crygk" aria-hidden="true">•••</span>
+                            <span class="2xl:block cncme ckixu c90g0">More</span>
+                        </h3>
+                        <ul class="c1tl2">
+                            <!-- Authentication -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4" :class="open &amp;&amp; 'c175c'" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <path class="c5mp3 c1gz1" d="M8.07 16H10V8H8.07a8 8 0 110 8z"></path>
+                                                <path class="co9pf c1gz1" d="M15 12L8 6v5H0v2h8v5z"></path>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Authentication</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="hidden cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="signin.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Sign In</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="signup.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Sign up</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="reset-password.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Reset Password</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Onboarding -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4" :class="open &amp;&amp; 'c175c'" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <path class="c5mp3 c1gz1" d="M19 5h1v14h-2V7.414L5.707 19.707 5 19H4V5h2v11.586L18.293 4.293 19 5Z"></path>
+                                                <path class="co9pf c1gz1" d="M5 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm14 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8ZM5 23a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm14 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"></path>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Onboarding</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="hidden cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="onboarding-01.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Step 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="onboarding-02.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Step 2</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="onboarding-03.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Step 3</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="onboarding-04.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Step 4</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Components -->
+                            <li class="rounded-sm cmegh c3bz2 c1mpb chwtm" x-data="{ open: false }">
+                                <a class="block cisjz c9gm5 cxtm7 cmta4" :class="open &amp;&amp; 'c175c'" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                    <div class="flex items-center czixg">
+                                        <div class="flex items-center">
+                                            <svg class="c2sgv c0wg1 crygk" viewBox="0 0 24 24">
+                                                <circle class="c5mp3 c1gz1" cx="16" cy="8" r="8"></circle>
+                                                <circle class="co9pf c1gz1" cx="8" cy="16" r="8"></circle>
+                                            </svg>
+                                            <span class="text-sm ml-3 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Components</span>
+                                        </div>
+                                        <!-- Icon -->
+                                        <div class="flex 2xl:opacity-100 c25dw ciuse cowcl cw0de c2sgv cozeo">
+                                            <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" :class="open ? 'ca75h' : 'c5ksi'" viewBox="0 0 12 12">
+                                                <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="2xl:block cncme ckixu c90g0">
+                                    <ul class="hidden cy792 ck51q" :class="open ? 'c2prx' : 'hidden'">
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-button.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Button</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-form.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Input Form</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-dropdown.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Dropdown</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-alert.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Alert &amp; Banner</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-modal.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Modal</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-pagination.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Pagination</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-tabs.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Tabs</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-breadcrumb.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Breadcrumb</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-badge.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Badge</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-avatar.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Avatar</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-tooltip.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Tooltip</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-accordion.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Accordion</span>
+                                            </a>
+                                        </li>
+                                        <li class="cmegh cb9ia">
+                                            <a class="block c175c co9pf cxtm7 cmta4 cgahp" href="component-icons.html">
+                                                <span class="text-sm 2xl:opacity-100 c25dw ciuse cowcl cw0de cqxsl">Icons</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Expand / collapse button -->
+                <div class="hidden 2xl:hidden justify-end cptq3 cqqye cjqyg co896">
+                    <div class="c1mpb chwtm">
+                        <button @click="sidebarExpanded = !sidebarExpanded">
+                            <span class="cscai">Expand / collapse sidebar</span>
+                            <svg class="c28fy c1gz1 c0wg1 crygk" viewBox="0 0 24 24">
+                                <path class="co9pf" d="M19.586 11l-5-5L16 4.586 23.414 12 16 19.414 14.586 18l5-5H7v-2z"></path>
+                                <path class="c5mp3" d="M3 23H1V1h2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+        <!-- Content area -->
+        <div class="flex cyykz c5tz3 c8r6b c8tor ca73n" x-ref="contentarea">
+
+            <!-- Site header -->
+            <header class="bg-white border-slate-200 dark:border-slate-700 c01nv cpk4f clqhz cve75 cii9t">
+                <div class="cw4s9 c89z9 cz5xv">
+                    <div class="flex items-center czixg cahg9 cfh17">
+
+                        <!-- Header: Left side -->
+                        <div class="flex">
+                            <!-- Hamburger button -->
+                            <button class="text-slate-500 cllne c90g0" @click.stop="sidebarOpen = !sidebarOpen" aria-controls="sidebar" :aria-expanded="sidebarOpen">
+                                <span class="cscai">Open sidebar</span>
+                                <svg class="c1gz1 c0wg1 crygk" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="5" width="16" height="2"></rect>
+                                    <rect x="4" y="11" width="16" height="2"></rect>
+                                    <rect x="4" y="17" width="16" height="2"></rect>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <!-- Header: Right side -->
+                        <div class="flex items-center coj1p">
+
+                            <!-- Search button -->
+                            <div x-data="{ searchOpen: false }">
+                                <!-- Button -->
+                                <button class="flex items-center justify-center rounded-full ctzoz c1xb9 c7bfj cjgp0 cjfe1 cgjv5" :class="{ 'cztvh': searchOpen }" @click.prevent="searchOpen = true;if (searchOpen) $nextTick(()=>{$refs.searchInput.focus()});" aria-controls="search-modal">
+                                    <span class="cscai">Search</span>
+                                    <svg class="c2m7s c0i6h" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="text-slate-500 dark:text-slate-400 c1gz1" d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"></path>
+                                        <path class="cmzci co9pf c1gz1" d="M15.707 14.293L13.314 11.9a8.019 8.019 0 01-1.414 1.414l2.393 2.393a.997.997 0 001.414 0 .999.999 0 000-1.414z"></path>
+                                    </svg>
+                                </button>
+                                <!-- Modal backdrop -->
+                                <div class="bg-slate-900 ck08a cfnbh ci6z5 cdqxl csj82" x-show="searchOpen" x-transition:enter="cmta4 cspej cw0de" x-transition:enter-start="opacity-0" x-transition:enter-end="c9l2a" x-transition:leave="cmta4 cspej ccjyr" x-transition:leave-start="c9l2a" x-transition:leave-end="opacity-0" aria-hidden="true" x-cloak=""></div>
+                                <!-- Modal dialog -->
+                                <div id="search-modal" class="flex justify-center cjdk2 c45nk cw4s9 ci6z5 coti7 cdqxl csj82 ctfnp cz5xv" role="dialog" aria-modal="true" x-show="searchOpen" x-transition:enter="cmta4 cus0z cw0de" x-transition:enter-start="opacity-0 c7ysf" x-transition:enter-end="c9l2a cahzk" x-transition:leave="cmta4 cus0z cw0de" x-transition:leave-start="c9l2a cahzk" x-transition:leave-end="opacity-0 c7ysf" x-cloak="">
+                                    <div class="bg-white dark:bg-slate-800 border dark:border-slate-700 rounded cual2 chkbp cya7l c1sz5 cfqve c8qjz" @click.outside="searchOpen = false" @keydown.escape.window="searchOpen = false">   
+                                        <!-- Search form -->
+                                        <form class="border-slate-200 dark:border-slate-700 cpk4f">
+                                            <div class="c8r6b">
+                                                <label for="modal-search" class="cscai">Search</label>
+                                                <input id="modal-search" class="bg-white dark:bg-slate-800 crpry cy33p c9lkb czwfr c36hk ce8su c8qjz coftf ch53f ciwjn" type="search" placeholder="Search Anything…" x-ref="searchInput">
+                                                <button class="cgon3 cj12w ci6z5 cmwnc" type="submit" aria-label="Search">
+                                                    <svg class="mr-2 ck5qh cxlra cmzci co9pf c1gz1 c2sgv cs5kz c2m7s c0i6h" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"></path>
+                                                        <path d="M15.707 14.293L13.314 11.9a8.019 8.019 0 01-1.414 1.414l2.393 2.393a.997.997 0 001.414 0 .999.999 0 000-1.414z"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </form>
+                                        <div class="c99w7 cutm8">
+                                            <!-- Recent searches -->
+                                            <div class="cmegh cmuds">
+                                                <div class="cmzci co9pf c6cuc cwva3 clava cbrwv c99w7">Recent searches</div>
+                                                <ul class="text-sm">
+                                                    <li>
+                                                        <a class="flex items-center text-slate-800 dark:text-slate-100 rounded cax8s cisjz cmwnc czkeq" href="#0" @click="searchOpen = false" @focus="searchOpen = true" @focusout="searchOpen = false">
+                                                            <svg class="cgsym cs8j3 cmzci co9pf c1gz1 c2sgv c5lt3 c2m7s c0i6h" viewBox="0 0 16 16">
+                                                                <path d="M15.707 14.293v.001a1 1 0 01-1.414 1.414L11.185 12.6A6.935 6.935 0 017 14a7.016 7.016 0 01-5.173-2.308l-1.537 1.3L0 8l4.873 1.12-1.521 1.285a4.971 4.971 0 008.59-2.835l1.979.454a6.971 6.971 0 01-1.321 3.157l3.107 3.112zM14 6L9.127 4.88l1.521-1.28a4.971 4.971 0 00-8.59 2.83L.084 5.976a6.977 6.977 0 0112.089-3.668l1.537-1.3L14 6z"></path>
+                                                            </svg>
+                                                            <span>Form Builder - 23 hours on-demand video</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flex items-center text-slate-800 dark:text-slate-100 rounded cax8s cisjz cmwnc czkeq" href="#0" @click="searchOpen = false" @focus="searchOpen = true" @focusout="searchOpen = false">
+                                                            <svg class="cgsym cs8j3 cmzci co9pf c1gz1 c2sgv c5lt3 c2m7s c0i6h" viewBox="0 0 16 16">
+                                                                <path d="M15.707 14.293v.001a1 1 0 01-1.414 1.414L11.185 12.6A6.935 6.935 0 017 14a7.016 7.016 0 01-5.173-2.308l-1.537 1.3L0 8l4.873 1.12-1.521 1.285a4.971 4.971 0 008.59-2.835l1.979.454a6.971 6.971 0 01-1.321 3.157l3.107 3.112zM14 6L9.127 4.88l1.521-1.28a4.971 4.971 0 00-8.59 2.83L.084 5.976a6.977 6.977 0 0112.089-3.668l1.537-1.3L14 6z"></path>
+                                                            </svg>
+                                                            <span>Access Mosaic on mobile and TV</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flex items-center text-slate-800 dark:text-slate-100 rounded cax8s cisjz cmwnc czkeq" href="#0" @click="searchOpen = false" @focus="searchOpen = true" @focusout="searchOpen = false">
+                                                            <svg class="cgsym cs8j3 cmzci co9pf c1gz1 c2sgv c5lt3 c2m7s c0i6h" viewBox="0 0 16 16">
+                                                                <path d="M15.707 14.293v.001a1 1 0 01-1.414 1.414L11.185 12.6A6.935 6.935 0 017 14a7.016 7.016 0 01-5.173-2.308l-1.537 1.3L0 8l4.873 1.12-1.521 1.285a4.971 4.971 0 008.59-2.835l1.979.454a6.971 6.971 0 01-1.321 3.157l3.107 3.112zM14 6L9.127 4.88l1.521-1.28a4.971 4.971 0 00-8.59 2.83L.084 5.976a6.977 6.977 0 0112.089-3.668l1.537-1.3L14 6z"></path>
+                                                            </svg>
+                                                            <span>Product Update - Q4 2021</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flex items-center text-slate-800 dark:text-slate-100 rounded cax8s cisjz cmwnc czkeq" href="#0" @click="searchOpen = false" @focus="searchOpen = true" @focusout="searchOpen = false">
+                                                            <svg class="cgsym cs8j3 cmzci co9pf c1gz1 c2sgv c5lt3 c2m7s c0i6h" viewBox="0 0 16 16">
+                                                                <path d="M15.707 14.293v.001a1 1 0 01-1.414 1.414L11.185 12.6A6.935 6.935 0 017 14a7.016 7.016 0 01-5.173-2.308l-1.537 1.3L0 8l4.873 1.12-1.521 1.285a4.971 4.971 0 008.59-2.835l1.979.454a6.971 6.971 0 01-1.321 3.157l3.107 3.112zM14 6L9.127 4.88l1.521-1.28a4.971 4.971 0 00-8.59 2.83L.084 5.976a6.977 6.977 0 0112.089-3.668l1.537-1.3L14 6z"></path>
+                                                            </svg>
+                                                            <span>Master Digital Marketing Strategy course</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flex items-center text-slate-800 dark:text-slate-100 rounded cax8s cisjz cmwnc czkeq" href="#0" @click="searchOpen = false" @focus="searchOpen = true" @focusout="searchOpen = false">
+                                                            <svg class="cgsym cs8j3 cmzci co9pf c1gz1 c2sgv c5lt3 c2m7s c0i6h" viewBox="0 0 16 16">
+                                                                <path d="M15.707 14.293v.001a1 1 0 01-1.414 1.414L11.185 12.6A6.935 6.935 0 017 14a7.016 7.016 0 01-5.173-2.308l-1.537 1.3L0 8l4.873 1.12-1.521 1.285a4.971 4.971 0 008.59-2.835l1.979.454a6.971 6.971 0 01-1.321 3.157l3.107 3.112zM14 6L9.127 4.88l1.521-1.28a4.971 4.971 0 00-8.59 2.83L.084 5.976a6.977 6.977 0 0112.089-3.668l1.537-1.3L14 6z"></path>
+                                                            </svg>
+                                                            <span>Dedicated forms for products</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flex items-center text-slate-800 dark:text-slate-100 rounded cax8s cisjz cmwnc czkeq" href="#0" @click="searchOpen = false" @focus="searchOpen = true" @focusout="searchOpen = false">
+                                                            <svg class="cgsym cs8j3 cmzci co9pf c1gz1 c2sgv c5lt3 c2m7s c0i6h" viewBox="0 0 16 16">
+                                                                <path d="M15.707 14.293v.001a1 1 0 01-1.414 1.414L11.185 12.6A6.935 6.935 0 017 14a7.016 7.016 0 01-5.173-2.308l-1.537 1.3L0 8l4.873 1.12-1.521 1.285a4.971 4.971 0 008.59-2.835l1.979.454a6.971 6.971 0 01-1.321 3.157l3.107 3.112zM14 6L9.127 4.88l1.521-1.28a4.971 4.971 0 00-8.59 2.83L.084 5.976a6.977 6.977 0 0112.089-3.668l1.537-1.3L14 6z"></path>
+                                                            </svg>
+                                                            <span>Product Update - Q4 2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- Recent pages -->
+                                            <div class="cmegh cmuds">
+                                                <div class="cmzci co9pf c6cuc cwva3 clava cbrwv c99w7">Recent pages</div>
+                                                <ul class="text-sm">
+                                                    <li>
+                                                        <a class="flex items-center text-slate-800 dark:text-slate-100 rounded cax8s cisjz cmwnc czkeq" href="#0" @click="searchOpen = false" @focus="searchOpen = true" @focusout="searchOpen = false">
+                                                            <svg class="cgsym cs8j3 cmzci co9pf c1gz1 c2sgv c5lt3 c2m7s c0i6h" viewBox="0 0 16 16">
+                                                                <path d="M14 0H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h8l5-5V1c0-.6-.4-1-1-1zM3 2h10v8H9v4H3V2z"></path>
+                                                            </svg>
+                                                            <span><span class="cqxsl">Messages</span> - <span class="dark:text-slate-400 cs8j3 c5mp3">Conversation / … / Mike Mills</span></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flex items-center text-slate-800 dark:text-slate-100 rounded cax8s cisjz cmwnc czkeq" href="#0" @click="searchOpen = false" @focus="searchOpen = true" @focusout="searchOpen = false">
+                                                            <svg class="cgsym cs8j3 cmzci co9pf c1gz1 c2sgv c5lt3 c2m7s c0i6h" viewBox="0 0 16 16">
+                                                                <path d="M14 0H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h8l5-5V1c0-.6-.4-1-1-1zM3 2h10v8H9v4H3V2z"></path>
+                                                            </svg>
+                                                            <span><span class="cqxsl">Messages</span> - <span class="dark:text-slate-400 cs8j3 c5mp3">Conversation / … / Eva Patrick</span></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                    
+                            </div>
+
+                            <!-- Notifications button -->
+                            <div class="inline-flex c8r6b" x-data="{ open: false }">
+                                <button class="flex items-center justify-center rounded-full ctzoz c1xb9 c7bfj cjgp0 cjfe1 cgjv5" :class="{ 'cztvh': open }" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open">
+                                    <span class="cscai">Notifications</span>
+                                    <svg class="c2m7s c0i6h" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="text-slate-500 dark:text-slate-400 c1gz1" d="M6.5 0C2.91 0 0 2.462 0 5.5c0 1.075.37 2.074 1 2.922V12l2.699-1.542A7.454 7.454 0 006.5 11c3.59 0 6.5-2.462 6.5-5.5S10.09 0 6.5 0z"></path>
+                                        <path class="cmzci co9pf c1gz1" d="M16 9.5c0-.987-.429-1.897-1.147-2.639C14.124 10.348 10.66 13 6.5 13c-.103 0-.202-.018-.305-.021C7.231 13.617 8.556 14 10 14c.449 0 .886-.04 1.307-.11L15 16v-4h-.012C15.627 11.285 16 10.425 16 9.5z"></path>
+                                    </svg>
+                                    <div class="rounded-full c7umm cw3ku cx03w cj12w cpqb2 cbunk cbds6 coo2s cve75"></div>
+                                </button>
+                                <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded c5qwj cjdk2 cfqve cj12w ckdhh cgzn0 carck cbunk c10gi chwwn c4ssr cy792" @click.outside="open = false" @keydown.escape.window="open = false" x-show="open" x-transition:enter="cmta4 cspej cw0de cvajv" x-transition:enter-start="opacity-0 cvnrp" x-transition:enter-end="c9l2a cahzk" x-transition:leave="cmta4 cspej cw0de" x-transition:leave-start="c9l2a" x-transition:leave-end="opacity-0" x-cloak="">
+                                    <div class="cmzci co9pf c6cuc cwva3 c28ba clava cz5xv cx13e">Notifications</div>
+                                    <ul>
+                                        <li class="border-slate-200 dark:border-slate-700 cfcp5 cpk4f">
+                                            <a class="block cpwbi cdqmc cz5xv chwtm" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">
+                                                <span class="block text-sm cbrwv">📣 <span class="text-slate-800 dark:text-slate-100 cqxsl">Edit your information in a swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</span>
+                                                <span class="block cmzci co9pf cqxsl clava">Feb 12, 2021</span>
+                                            </a>
+                                        </li>
+                                        <li class="border-slate-200 dark:border-slate-700 cfcp5 cpk4f">
+                                            <a class="block cpwbi cdqmc cz5xv chwtm" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">
+                                                <span class="block text-sm cbrwv">📣 <span class="text-slate-800 dark:text-slate-100 cqxsl">Edit your information in a swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</span>
+                                                <span class="block cmzci co9pf cqxsl clava">Feb 9, 2021</span>
+                                            </a>
+                                        </li>
+                                        <li class="border-slate-200 dark:border-slate-700 cfcp5 cpk4f">
+                                            <a class="block cpwbi cdqmc cz5xv chwtm" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">
+                                                <span class="block text-sm cbrwv">🚀<span class="text-slate-800 dark:text-slate-100 cqxsl">Say goodbye to paper receipts!</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</span>
+                                                <span class="block cmzci co9pf cqxsl clava">Jan 24, 2020</span>
+                                            </a>
+                                        </li>
+                                    </ul>                
+                                </div>
+                            </div>
+
+                            <!-- Info button -->
+                            <div class="inline-flex c8r6b" x-data="{ open: false }">
+                                <button class="flex items-center justify-center rounded-full ctzoz c1xb9 c7bfj cjgp0 cjfe1 cgjv5" :class="{ 'cztvh': open }" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open">
+                                    <span class="cscai">Info</span>
+                                    <svg class="c2m7s c0i6h" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="text-slate-500 dark:text-slate-400 c1gz1" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 12c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm1-3H7V4h2v5z"></path>
+                                    </svg>
+                                </button>
+                                <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded c5qwj cjdk2 cfqve cj12w ckdhh cw4av cbunk c10gi c4ssr cy792" @click.outside="open = false" @keydown.escape.window="open = false" x-show="open" x-transition:enter="cmta4 cspej cw0de cvajv" x-transition:enter-start="opacity-0 cvnrp" x-transition:enter-end="c9l2a cahzk" x-transition:leave="cmta4 cspej cw0de" x-transition:leave-start="c9l2a" x-transition:leave-end="opacity-0" x-cloak="">
+                                    <div class="cmzci co9pf c6cuc cwva3 c28ba clava c1mpb cx13e">Need help?</div>
+                                    <ul>
+                                        <li>
+                                            <a class="text-sm text-indigo-500 flex items-center c4rqt cexwo cqxsl c1mpb cwkrd" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">
+                                                <svg class="w-3 h-3 text-indigo-300 mr-2 cu4pu c1gz1 c2sgv" viewBox="0 0 12 12">
+                                                    <rect y="3" width="12" height="9" rx="1"></rect>
+                                                    <path d="M2 0h8v2H2z"></path>
+                                                </svg>
+                                                <span>Documentation</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-sm text-indigo-500 flex items-center c4rqt cexwo cqxsl c1mpb cwkrd" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">
+                                                <svg class="w-3 h-3 text-indigo-300 mr-2 cu4pu c1gz1 c2sgv" viewBox="0 0 12 12">
+                                                    <path d="M10.5 0h-9A1.5 1.5 0 000 1.5v9A1.5 1.5 0 001.5 12h9a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0010.5 0zM10 7L8.207 5.207l-3 3-1.414-1.414 3-3L5 2h5v5z"></path>
+                                                </svg>
+                                                <span>Support Site</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-sm text-indigo-500 flex items-center c4rqt cexwo cqxsl c1mpb cwkrd" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">
+                                                <svg class="w-3 h-3 text-indigo-300 mr-2 cu4pu c1gz1 c2sgv" viewBox="0 0 12 12">
+                                                    <path d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z"></path>
+                                                </svg>
+                                                <span>Contact us</span>
+                                            </a>
+                                        </li>
+                                    </ul>                
+                                </div>
+                            </div>
+
+                            <!-- Dark mode toggle -->
+                            <div>
+                                <input type="checkbox" name="light-switch" id="light-switch" class="light-switch cscai">
+                                <label class="flex items-center justify-center rounded-full ctzoz c1xb9 c7bfj cx0lb cjgp0 cjfe1 cgjv5" for="light-switch">
+                                    <svg class="c9rqz c2m7s c0i6h" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="co9pf c1gz1" d="M7 0h2v2H7V0Zm5.88 1.637 1.414 1.415-1.415 1.413-1.414-1.414 1.415-1.414ZM14 7h2v2h-2V7Zm-1.05 7.433-1.415-1.414 1.414-1.414 1.415 1.413-1.414 1.415ZM7 14h2v2H7v-2Zm-4.02.363L1.566 12.95l1.415-1.414 1.414 1.415-1.415 1.413ZM0 7h2v2H0V7Zm3.05-5.293L4.465 3.12 3.05 4.535 1.636 3.121 3.05 1.707Z"></path>
+                                        <path class="text-slate-500 c1gz1" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"></path>
+                                    </svg>
+                                    <svg class="hidden c1stj c2m7s c0i6h" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="co9pf c1gz1" d="M6.2 2C3.2 2.8 1 5.6 1 8.9 1 12.8 4.2 16 8.1 16c3.3 0 6-2.2 6.9-5.2C9.7 12.2 4.8 7.3 6.2 2Z"></path>
+                                        <path class="text-slate-500 c1gz1" d="M12.5 6a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 6Z"></path>
+                                    </svg>
+                                    <span class="cscai">Switch to light / dark version</span>
+                                </label>
+                            </div>
+
+                            <!-- Divider -->
+                            <hr class="c7bfj cztvh ct2r3 czsnd c0wg1">
+
+                            <!-- User button -->
+                            <div class="inline-flex c8r6b" x-data="{ open: false }">
+                                <button class="inline-flex justify-center items-center cmwnc" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open">
+                                    <img class="rounded-full cjfe1 cgjv5" src="images/user-avatar-32.png" width="32" height="32" alt="User">
+                                    <div class="flex items-center cgahp">
+                                        <span class="text-sm cesgn c3dub czwfr cqxsl cgahp cozeo">Acme Inc.</span>
+                                        <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" viewBox="0 0 12 12">
+                                            <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded c5qwj cjdk2 cfqve cj12w ckdhh cw4av cbunk c10gi c4ssr cy792" @click.outside="open = false" @keydown.escape.window="open = false" x-show="open" x-transition:enter="cmta4 cspej cw0de cvajv" x-transition:enter-start="opacity-0 cvnrp" x-transition:enter-end="c9l2a cahzk" x-transition:leave="cmta4 cspej cw0de" x-transition:leave-start="c9l2a" x-transition:leave-end="opacity-0" x-cloak="">
+                                    <div class="border-slate-200 dark:border-slate-700 cpk4f c7ewx cb9ia c1mpb cx13e">
+                                        <div class="text-slate-800 dark:text-slate-100 cqxsl">Acme Inc.</div>
+                                        <div class="text-slate-500 dark:text-slate-400 clava cd06p">Administrator</div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a class="text-sm text-indigo-500 flex items-center c4rqt cexwo cqxsl c1mpb cwkrd" href="settings.html" @click="open = false" @focus="open = true" @focusout="open = false">Settings</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-sm text-indigo-500 flex items-center c4rqt cexwo cqxsl c1mpb cwkrd" href="signin.html" @click="open = false" @focus="open = true" @focusout="open = false">Sign Out</a>
+                                        </li>
+                                    </ul>                
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            
+            <main class="cvxud">
+
+                <div class="flex c8r6b ct6ar">
+
+                    <!-- Messages sidebar -->
+                    <div id="messages-sidebar" class="co4t0 cq9r2 cphk2 cw0de c2j01 cus0z c3k7p css65 cj12w c5xau c7pmc c8qjz cve75 ckzsl" :class="msgSidebarOpen ? 'translate-x-0' : '-c4pq7'">
+                        <div class="bg-white border-slate-200 dark:border-slate-700 cnkij c0mt6 cyykz c5tz3 c2zpm c2sgv ch4d3 cvswx cwagp clqhz ccas3">
+
+                            <!-- #Marketing group -->
+                            <div>
+                                <!-- Group header -->
+                                <div class="clqhz cve75 c4ssr">
+                                    <div class="flex items-center bg-white border-slate-200 dark:border-slate-700 c0mt6 cpk4f cfh17 cxt08">
+                                        <div class="flex items-center czixg c8qjz">
+                                            <!-- Channel menu -->
+                                            <div class="c8r6b" x-data="{ open: false }">
+                                                <button class="flex items-center cgahp cvxud" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open">
+                                                    <img class="rounded-full mr-2 cjfe1 cgjv5" src="images/user-avatar-32.png" width="32" height="32" alt="Group 01">
+                                                    <div class="cgahp">
+                                                        <span class="text-slate-800 dark:text-slate-100 c6cuc">#Marketing</span>
+                                                    </div>
+                                                    <svg class="w-3 h-3 co9pf c1gz1 c2sgv c9shx" viewBox="0 0 12 12">
+                                                        <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded c5qwj cjdk2 cfqve cj12w ckdhh cajqn c10gi cay19 c4ssr cy792" @click.outside="open = false" @keydown.escape.window="open = false" x-show="open" x-transition:enter="cmta4 cspej cw0de cvajv" x-transition:enter-start="opacity-0 cvnrp" x-transition:enter-end="c9l2a cahzk" x-transition:leave="cmta4 cspej cw0de" x-transition:leave-start="c9l2a" x-transition:leave-end="opacity-0" x-cloak="">
+                                                    <ul>
+                                                        <li>
+                                                            <a class="text-sm block cjt2t cxqpu czwfr c5mp3 cqxsl c10gi c1mpb" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">
+                                                                <div class="flex items-center czixg">
+                                                                    <div class="flex items-center cgahp cvxud">
+                                                                        <img class="rounded-full mr-2 cym49 cgk66" src="images/channel-01.png" width="28" height="28" alt="Channel 01">
+                                                                        <div class="cgahp">#Marketing</div>
+                                                                    </div>
+                                                                    <svg class="w-3 h-3 text-indigo-500 c1gz1 c2sgv c9shx" viewBox="0 0 12 12">
+                                                                        <path d="M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="text-sm block cjt2t cxqpu czwfr c5mp3 cqxsl c10gi c1mpb" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">
+                                                                <div class="flex items-center czixg">
+                                                                    <div class="flex items-center cgahp cvxud">
+                                                                        <img class="rounded-full mr-2 cym49 cgk66" src="images/channel-02.png" width="28" height="28" alt="Channel 02">
+                                                                        <div class="cgahp">#Developing</div>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="text-sm block cjt2t cxqpu czwfr c5mp3 cqxsl c10gi c1mpb" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">
+                                                                <div class="flex items-center czixg">
+                                                                    <div class="flex items-center cgahp cvxud">
+                                                                        <img class="rounded-full mr-2 cym49 cgk66" src="images/channel-03.png" width="28" height="28" alt="Channel 03">
+                                                                        <div class="cgahp">#ProductSupport</div>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Edit button -->
+                                            <button class="rounded bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 crqwc c8vlk cwmmb c2sgv ce55u cozeo">
+                                                <svg class="text-slate-500 c1gz1 c2m7s c0i6h" viewBox="0 0 16 16">
+                                                    <path d="M11.7.3c-.4-.4-1-.4-1.4 0l-10 10c-.2.2-.3.4-.3.7v4c0 .6.4 1 1 1h4c.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4l-4-4zM4.6 14H2v-2.6l6-6L10.6 8l-6 6zM12 6.6L9.4 4 11 2.4 13.6 5 12 6.6z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Group body -->
+                                <div class="cxt08 cutm8">
+                                    <!-- Search form -->
+                                    <form class="c8r6b">
+                                        <label for="msg-search" class="cscai">Search</label>
+                                        <input id="msg-search" class="bg-white dark:bg-slate-800 cjpr4 c8qjz ck51q" type="search" placeholder="Search…">
+                                        <button class="cgon3 cj12w ci6z5 cmwnc" type="submit" aria-label="Search">
+                                            <svg class="ml-3 mr-2 ck5qh cxlra cmzci co9pf c1gz1 c2sgv c2m7s c0i6h" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"></path>
+                                                <path d="M15.707 14.293L13.314 11.9a8.019 8.019 0 01-1.414 1.414l2.393 2.393a.997.997 0 001.414 0 .999.999 0 000-1.414z"></path>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                    <!-- Direct messages -->
+                                    <div class="c8n5e">
+                                        <div class="cmzci co9pf c6cuc cwva3 clava cmuds">Direct messages</div>
+                                        <ul class="cq1mn">
+                                            <li class="cuwts">
+                                                <button class="flex items-center rounded c56c0 czixg c8qjz czkeq" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
+                                                    <div class="flex items-center cgahp">
+                                                        <img class="rounded-full mr-2 cjfe1 cgjv5" src="images/user-32-01.jpg" width="32" height="32" alt="User 01">
+                                                        <div class="cgahp">
+                                                            <span class="text-sm text-slate-800 dark:text-slate-100 cqxsl">Dominik Lamakani</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex items-center cozeo">
+                                                        <div class="inline-flex rounded-full cca97 cuqjw cqxsl cutn8 cmdr3 clava c99w7">2</div>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li class="cuwts">
+                                                <button class="flex items-center rounded czixg c8qjz czkeq" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
+                                                    <div class="flex items-center cgahp">
+                                                        <img class="rounded-full mr-2 cjfe1 cgjv5" src="images/user-32-02.jpg" width="32" height="32" alt="User 02">
+                                                        <div class="cgahp">
+                                                            <span class="text-sm text-slate-800 dark:text-slate-100 cqxsl">Tisha Yanchev</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex items-center cozeo">
+                                                        <div class="inline-flex rounded-full cca97 cuqjw cqxsl cutn8 cmdr3 clava c99w7">4</div>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li class="cuwts">
+                                                <button class="flex items-center rounded czixg c8qjz czkeq" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
+                                                    <div class="flex items-center cgahp">
+                                                        <img class="rounded-full mr-2 cjfe1 cgjv5" src="images/user-32-03.jpg" width="32" height="32" alt="User 03">
+                                                        <div class="cgahp">
+                                                            <span class="text-sm text-slate-800 dark:text-slate-100 cqxsl">Jerzy Wierzy</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex items-center cozeo">
+                                                        <img class="rounded-full c2sgv c2ldl cr3ce" src="images/user-32-03.jpg" width="20" height="20" alt="User 03">
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li class="cuwts">
+                                                <button class="flex items-center rounded czixg c8qjz czkeq" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
+                                                    <div class="flex items-center cgahp">
+                                                        <img class="rounded-full mr-2 cjfe1 cgjv5" src="images/user-32-04.jpg" width="32" height="32" alt="User 04">
+                                                        <div class="cgahp">
+                                                            <span class="text-sm text-slate-800 dark:text-slate-100 cqxsl">Adrian Przetocki</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex items-center cozeo">
+                                                        <svg class="w-3 h-3 co9pf c1gz1 c2sgv" viewBox="0 0 12 12">
+                                                            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li class="cuwts">
+                                                <button class="flex items-center rounded czixg c8qjz czkeq" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
+                                                    <div class="flex items-center cgahp">
+                                                        <img class="rounded-full mr-2 cjfe1 cgjv5" src="images/user-32-05.jpg" width="32" height="32" alt="User 05">
+                                                        <div class="cgahp">
+                                                            <span class="text-sm text-slate-800 dark:text-slate-100 cqxsl">Simona Lürwer</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex items-center cozeo">
+                                                        <svg class="w-3 h-3 co9pf c1gz1 c2sgv" viewBox="0 0 12 12">
+                                                            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li class="cuwts">
+                                                <button class="flex items-center rounded czixg c8qjz czkeq" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
+                                                    <div class="flex items-center cgahp">
+                                                        <img class="rounded-full mr-2 cjfe1 cgjv5" src="images/user-32-06.jpg" width="32" height="32" alt="User 06">
+                                                        <div class="cgahp">
+                                                            <span class="text-sm text-slate-800 dark:text-slate-100 cqxsl">Mary Roszczewski</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex items-center cozeo">
+                                                        <svg class="w-3 h-3 co9pf c1gz1 c2sgv" viewBox="0 0 12 12">
+                                                            <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Channels -->
+                                    <div class="c8n5e">
+                                        <div class="cmzci co9pf c6cuc cwva3 clava cmuds">Channels</div>
+                                        <ul class="cq1mn">
+                                            <li class="cuwts">
+                                                <button class="flex items-center rounded czixg c8qjz czkeq" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
+                                                    <div class="flex items-center">
+                                                        <div class="cgahp">
+                                                            <span class="text-sm text-slate-800 dark:text-slate-100 cqxsl">#New Leads</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex items-center cozeo">
+                                                        <div class="w-2 h-2 rounded-full cca97"></div>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li class="cuwts">
+                                                <button class="flex items-center rounded czixg c8qjz czkeq" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
+                                                    <div class="flex items-center cgahp">
+                                                        <div class="cgahp">
+                                                            <span class="text-sm text-slate-800 dark:text-slate-100 cqxsl">#Development Team</span>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li class="cuwts">
+                                                <button class="flex items-center rounded czixg c8qjz czkeq" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
+                                                    <div class="flex items-center cgahp">
+                                                        <div class="cgahp">
+                                                            <span class="text-sm text-slate-800 dark:text-slate-100 cqxsl">#Product Tips</span>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Messages body -->
+                    <div class="flex co4t0 cq9r2 cjvza cus0z c8tor cvxud" :class="msgSidebarOpen ? 'translate-x-1/3' : 'translate-x-0'">
+
+                        <!-- Header -->
+                        <div class="clqhz ccas3">
+                            <div class="flex items-center border-slate-200 dark:border-slate-700 cbl86 czixg coz0r cpk4f cw4s9 cx2wx cfh17 cz5xv">
+                                <!-- People -->
+                                <div class="flex items-center">
+                                    <!-- Close button -->
+                                    <button class="mr-4 cgafb co9pf cd629" @click.stop="msgSidebarOpen = !msgSidebarOpen" aria-controls="messages-sidebar" :aria-expanded="msgSidebarOpen">
+                                        <span class="cscai">Close sidebar</span>
+                                        <svg class="c1gz1 c0wg1 crygk" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z"></path>
+                                        </svg>
+                                    </button>
+                                    <!-- People list -->
+                                    <div class="flex c3nzo ctyu3">
+                                        <a class="block" href="#0">
+                                            <img class="rounded-full c01ra cw3ku cqv0g cpqb2" src="images/user-32-01.jpg" width="32" height="32" alt="User 01">
+                                        </a>
+                                        <a class="block" href="#0">
+                                            <img class="rounded-full c01ra cw3ku cqv0g cpqb2" src="images/user-32-07.jpg" width="32" height="32" alt="User 04">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Buttons on the right side -->
+                                <div class="flex">
+                                    <button class="rounded bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 crqwc c8vlk cwmmb c2sgv ce55u cozeo">
+                                        <svg class="cmzci co9pf c1gz1 c2m7s c0i6h" viewBox="0 0 16 16">
+                                            <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 12c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm1-3H7V4h2v5z"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="rounded bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 crqwc c8vlk cwmmb c2sgv ce55u cozeo">
+                                        <svg class="text-indigo-500 c1gz1 c2m7s c0i6h" viewBox="0 0 16 16">
+                                            <path d="M14.3 2.3L5 11.6 1.7 8.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="cw4s9 cx2wx cvxud cz5xv cp9kw">
+                            <!-- Chat msg -->
+                            <div class="flex c45nk cmegh ctfnp">
+                                <img class="rounded-full mr-4" src="images/user-40-11.jpg" width="40" height="40" alt="User 01">
+                                <div>
+                                    <div class="text-sm bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-200 dark:border-slate-700 shadow-md cgcc6 caovo cb9ia cyte8">
+                                        Can anyone help? I have a question about Acme Professional
+                                    </div>
+                                    <div class="flex items-center czixg">
+                                        <div class="text-slate-500 cqxsl clava">2:40 PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chat msg -->
+                            <div class="flex c45nk cmegh ctfnp">
+                                <img class="rounded-full mr-4" src="images/user-40-12.jpg" width="40" height="40" alt="User 02">
+                                <div>
+                                    <div class="text-sm border shadow-md cual2 cgcc6 cp72d caovo cutn8 cb9ia cyte8">
+                                        Hey Dominik Lamakani 👋<br>
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 🙌
+                                    </div>
+                                    <div class="flex items-center czixg">
+                                        <div class="text-slate-500 cqxsl clava">2:40 PM</div>
+                                        <svg class="h-3 c1xht c1gz1 c2sgv cr3ce" viewBox="0 0 20 12">
+                                            <path d="M10.402 6.988l1.586 1.586L18.28 2.28a1 1 0 011.414 1.414l-7 7a1 1 0 01-1.414 0L8.988 8.402l-2.293 2.293a1 1 0 01-1.414 0l-3-3A1 1 0 013.695 6.28l2.293 2.293L12.28 2.28a1 1 0 011.414 1.414l-3.293 3.293z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chat msg -->
+                            <div class="flex c45nk cmegh ctfnp">
+                                <img class="rounded-full mr-4" src="images/user-40-11.jpg" width="40" height="40" alt="User 01">
+                                <div>
+                                    <div class="flex items-center">
+                                        <img class="shadow-md caovo cb9ia" src="images/chat-image.jpg" width="240" height="180" alt="Chat image">
+                                        <button class="rounded-full border border-slate-200 dark:border-slate-700 c7f37 cre59 cxtm7 cmta4 ce55u cs5kz">
+                                            <span class="cscai">Download</span>
+                                            <svg class="cmzci co9pf c1gz1 c2sgv c2m7s c0i6h" viewBox="0 0 16 16">
+                                                <path d="M15 15H1a1 1 0 01-1-1V2a1 1 0 011-1h4v2H2v10h12V3h-3V1h4a1 1 0 011 1v12a1 1 0 01-1 1zM9 7h3l-4 4-4-4h3V1h2v6z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center czixg">
+                                        <div class="text-slate-500 cqxsl clava">2:48 PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chat msg -->
+                            <div class="flex c45nk cmegh ctfnp">
+                                <img class="rounded-full mr-4" src="images/user-40-11.jpg" width="40" height="40" alt="User 01">
+                                <div>
+                                    <div class="text-sm bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-200 dark:border-slate-700 shadow-md cgcc6 caovo cb9ia cyte8">
+                                        What do you think? Duis aute irure dolor in reprehenderit 🔥
+                                    </div>
+                                    <div class="flex items-center czixg">
+                                        <div class="text-slate-500 cqxsl clava">2:48 PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chat msg -->
+                            <div class="flex c45nk cmegh ctfnp">
+                                <img class="rounded-full mr-4" src="images/user-40-12.jpg" width="40" height="40" alt="User 02">
+                                <div>
+                                    <div class="text-sm border shadow-md cual2 cgcc6 cp72d caovo cutn8 cb9ia cyte8">
+                                        Sed euismod nisi porta lorem mollis. Tellus elementum sagittis vitae et leo duis. Viverra justo nec ultrices dui.<br>
+                                        Sed lectus vestibulum mattis ullamcorper velit sed. Ut sem nulla pharetra diam sit amet 🎁
+                                    </div>
+                                    <div class="flex items-center czixg">
+                                        <div class="text-slate-500 cqxsl clava">2:55 PM</div>
+                                        <svg class="w-3 h-3 co9pf c1gz1 c2sgv" viewBox="0 0 12 12">
+                                            <path d="M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Date separator -->
+                            <div class="flex justify-center">
+                                <div class="inline-flex items-center justify-center bg-white border border-slate-200 rounded-full c5mp3 cqxsl cz928 clava csizb cwkrd">
+                                    Tuesday, 20 January
+                                </div>
+                            </div>
+                            <!-- Chat msg -->
+                            <div class="flex c45nk cmegh ctfnp">
+                                <img class="rounded-full mr-4" src="images/user-40-12.jpg" width="40" height="40" alt="User 02">
+                                <div>
+                                    <div class="text-sm border shadow-md cual2 cgcc6 cp72d caovo cutn8 cb9ia cyte8">
+                                        Can you join <a class="cqxsl" href="#0">@dominik</a>? <a class="c5w5r" href="#0">https://meet.google.com/haz-r3gt-idj</a>
+                                    </div>
+                                    <div class="flex items-center czixg">
+                                        <div class="text-slate-500 cqxsl clava">10:15 AM</div>
+                                        <svg class="w-3 h-3 co9pf c1gz1 c2sgv" viewBox="0 0 12 12">
+                                            <path d="M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chat msg -->
+                            <div class="flex c45nk cmegh ctfnp">
+                                <img class="rounded-full mr-4" src="images/user-40-11.jpg" width="40" height="40" alt="User 01">
+                                <div>
+                                    <div class="text-sm bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-200 dark:border-slate-700 shadow-md cgcc6 caovo cb9ia cyte8">
+                                        <svg class="cmzci co9pf c1gz1" viewBox="0 0 15 3" width="15" height="3">
+                                            <circle cx="1.5" cy="1.5" r="1.5">
+                                                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1"></animate>
+                                            </circle>
+                                            <circle cx="7.5" cy="1.5" r="1.5">
+                                                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2"></animate>
+                                            </circle>
+                                            <circle cx="13.5" cy="1.5" r="1.5">
+                                                <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3"></animate>
+                                            </circle>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="c5xau clqhz">
+                            <div class="flex items-center bg-white border-slate-200 dark:border-slate-700 c0mt6 czixg czcp2 cw4s9 cx2wx cfh17 cz5xv">
+                                <!-- Plus button -->
+                                <button class="cnece cgafb cmzci co9pf c2sgv c5lt3">
+                                    <span class="cscai">Add</span>
+                                    <svg class="c1gz1 c0wg1 crygk" viewBox="0 0 24 24">
+                                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12C23.98 5.38 18.62.02 12 0zm6 13h-5v5h-2v-5H6v-2h5V6h2v5h5v2z"></path>
+                                    </svg>
+                                </button>
+                                <!-- Message input -->
+                                <form class="flex cvxud">
+                                    <div class="c5lt3 cvxud">
+                                        <label for="message-input" class="cscai">Type a message</label>
+                                        <input id="message-input" class="dark:bg-slate-800 c3aiq c7jwu cwhut cual2 caxju cjgp0 cjpr4 c8qjz" type="text" placeholder="Aa">
+                                    </div>
+                                    <button type="submit" class="btn ccotk c1idu cp72d cutn8">Send -&gt;</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <script src="js/vendors/alpinejs.min.js" defer=""></script>
+    <script src="js/main.js"></script>
+
+
+
+<script>console.log("%cImportant!", "color: blue; font-size: x-large");console.log("%cThe page you are viewing is for demo purposes only. CSS and HTML have been minified and class names have been shortened to improve the page load time. Download our templates from https://cruip.com/ 😉", "font-size: large");</script><script>const pagesList = [{"name":"Dashboard","url":"https://preview.cruip.com/mosaic/index.html","active":false},{"name":"Analytics","url":"https://preview.cruip.com/mosaic/analytics.html","active":false},{"name":"Fintech","url":"https://preview.cruip.com/mosaic/fintech.html","active":false},{"name":"Customers","url":"https://preview.cruip.com/mosaic/customers.html","active":false},{"name":"Orders","url":"https://preview.cruip.com/mosaic/orders.html","active":false},{"name":"Invoices","url":"https://preview.cruip.com/mosaic/invoices.html","active":false},{"name":"Shop","url":"https://preview.cruip.com/mosaic/shop.html","active":false},{"name":"Shop 2","url":"https://preview.cruip.com/mosaic/shop-2.html","active":false},{"name":"Single Product","url":"https://preview.cruip.com/mosaic/product.html","active":false},{"name":"Cart","url":"https://preview.cruip.com/mosaic/cart.html","active":false},{"name":"Cart 2","url":"https://preview.cruip.com/mosaic/cart-2.html","active":false},{"name":"Cart 3","url":"https://preview.cruip.com/mosaic/cart-3.html","active":false},{"name":"Pay","url":"https://preview.cruip.com/mosaic/pay.html","active":false},{"name":"Campaigns","url":"https://preview.cruip.com/mosaic/campaigns.html","active":false},{"name":"Users Tabs","url":"https://preview.cruip.com/mosaic/users-tabs.html","active":false},{"name":"Users Tiles","url":"https://preview.cruip.com/mosaic/users-tiles.html","active":false},{"name":"Profile","url":"https://preview.cruip.com/mosaic/profile.html","active":false},{"name":"Feed","url":"https://preview.cruip.com/mosaic/feed.html","active":false},{"name":"Forum","url":"https://preview.cruip.com/mosaic/forum.html","active":false},{"name":"Forum Post","url":"https://preview.cruip.com/mosaic/forum-post.html","active":false},{"name":"Meetups","url":"https://preview.cruip.com/mosaic/meetups.html","active":false},{"name":"Meetups Post","url":"https://preview.cruip.com/mosaic/meetups-post.html","active":false},{"name":"Cards","url":"https://preview.cruip.com/mosaic/credit-cards.html","active":false},{"name":"Transactions","url":"https://preview.cruip.com/mosaic/transactions.html","active":false},{"name":"Transaction Details","url":"https://preview.cruip.com/mosaic/transaction-details.html","active":false},{"name":"Jobs Listing","url":"https://preview.cruip.com/mosaic/job-listing.html","active":false},{"name":"Jobs Post","url":"https://preview.cruip.com/mosaic/job-post.html","active":false},{"name":"Company Profile","url":"https://preview.cruip.com/mosaic/company-profile.html","active":false},{"name":"Kanban","url":"https://preview.cruip.com/mosaic/tasks-kanban.html","active":false},{"name":"Tasks List","url":"https://preview.cruip.com/mosaic/tasks-list.html","active":false},{"name":"Messages","url":"https://preview.cruip.com/mosaic/messages.html","active":true},{"name":"Inbox","url":"https://preview.cruip.com/mosaic/inbox.html","active":false},{"name":"Calendar","url":"https://preview.cruip.com/mosaic/calendar.html","active":false},{"name":"Applications","url":"https://preview.cruip.com/mosaic/applications.html","active":false},{"name":"My Account","url":"https://preview.cruip.com/mosaic/settings.html","active":false},{"name":"My Notifications","url":"https://preview.cruip.com/mosaic/notifications.html","active":false},{"name":"Connected Apps","url":"https://preview.cruip.com/mosaic/connected-apps.html","active":false},{"name":"Plans","url":"https://preview.cruip.com/mosaic/plans.html","active":false},{"name":"Billing & Invoices","url":"https://preview.cruip.com/mosaic/billing.html","active":false},{"name":"Give Feedback","url":"https://preview.cruip.com/mosaic/feedback.html","active":false},{"name":"Changelog","url":"https://preview.cruip.com/mosaic/changelog.html","active":false},{"name":"Roadmap","url":"https://preview.cruip.com/mosaic/roadmap.html","active":false},{"name":"FAQs","url":"https://preview.cruip.com/mosaic/faqs.html","active":false},{"name":"Empty State","url":"https://preview.cruip.com/mosaic/empty-state.html","active":false},{"name":"Page Not Found","url":"https://preview.cruip.com/mosaic/404.html","active":false},{"name":"Knowledge Base","url":"https://preview.cruip.com/mosaic/knowledge-base.html","active":false},{"name":"Sign in","url":"https://preview.cruip.com/mosaic/signin.html","active":false},{"name":"Sign up","url":"https://preview.cruip.com/mosaic/signup.html","active":false},{"name":"Reset password","url":"https://preview.cruip.com/mosaic/reset-password.html","active":false},{"name":"Onboarding 1","url":"https://preview.cruip.com/mosaic/onboarding-01.html","active":false},{"name":"Onboarding 2","url":"https://preview.cruip.com/mosaic/onboarding-02.html","active":false},{"name":"Onboarding 3","url":"https://preview.cruip.com/mosaic/onboarding-03.html","active":false},{"name":"Onboarding 4","url":"https://preview.cruip.com/mosaic/onboarding-04.html","active":false},{"name":"Button","url":"https://preview.cruip.com/mosaic/component-button.html","active":false},{"name":"Input Form","url":"https://preview.cruip.com/mosaic/component-form.html","active":false},{"name":"Dropdown","url":"https://preview.cruip.com/mosaic/component-dropdown.html","active":false},{"name":"Alert & Banner","url":"https://preview.cruip.com/mosaic/component-alert.html","active":false},{"name":"Modal","url":"https://preview.cruip.com/mosaic/component-modal.html","active":false},{"name":"Pagination","url":"https://preview.cruip.com/mosaic/component-pagination.html","active":false},{"name":"Tabs","url":"https://preview.cruip.com/mosaic/component-tabs.html","active":false},{"name":"Breadcrumb","url":"https://preview.cruip.com/mosaic/component-breadcrumb.html","active":false},{"name":"Badge","url":"https://preview.cruip.com/mosaic/component-badge.html","active":false},{"name":"Avatar","url":"https://preview.cruip.com/mosaic/component-avatar.html","active":false},{"name":"Tooltip","url":"https://preview.cruip.com/mosaic/component-tooltip.html","active":false},{"name":"Accordion","url":"https://preview.cruip.com/mosaic/component-accordion.html","active":false},{"name":"Icons","url":"https://preview.cruip.com/mosaic/component-icons.html","active":false}];if(window != top){window.parent.postMessage(pagesList, "https://cruip.com/")};</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"81363fd7bd8d4ab3","version":"2023.8.0","r":1,"b":1,"token":"59cc17d45d734f9ba118c63036ab1b84","si":100}' crossorigin="anonymous"></script>
+</body>
+<!-- Mirrored from preview.cruip.com/mosaic/messages.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Oct 2023 23:26:34 GMT -->
+</html>
